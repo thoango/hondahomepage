@@ -1,0 +1,50 @@
+.search-field {
+    background-color: $color-grey;
+    padding: $pd-1 $pd-6;
+    position: relative;
+    svg {
+        color: $color-blue-100;
+        font-size: $font-size-2;
+    }
+    input {
+        width: 87%;
+        height: 4.5rem;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        font-weight: $font-weight-300;
+        font-size: $font-size-3;
+        color: $color-blue-200;
+        &::placeholder {
+            font-size: $font-size-3;
+        }
+    }
+    &::before {
+        @include arrow(unset, 1%);
+        border-bottom-color: $color-grey;
+    }
+}
+
+#search-field {
+    background-color: $color-white;
+    border: $border-3;
+    padding: 0 $pd-6;
+    div {
+        padding: $pd-1 0;
+        width: 85%;
+        border-right: $border-3;
+        input {
+            width: 85%;
+        }
+    }
+    p {
+        flex-grow: 1;
+        font-size: $font-size-1;
+        color: $color-blue-200;
+        text-align: right;
+        cursor: pointer;
+    }
+    &::before {
+        display: none;
+    }
+}

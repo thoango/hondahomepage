@@ -1,0 +1,241 @@
+#navbar {
+    @media screen and (max-width: 768px) {
+        a {
+            padding: $pd-1 $pd-2;
+            &:first-child {
+                padding: $pd-1 $pd-2;
+            }
+        }
+        .nav-item {
+            .discover-menu {
+                &::before {
+                    @include arrow(7%, unset);
+                    top: 4.5rem;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .navbar-collapse {
+            border-top: $border-2;
+        }
+    }
+}
+
+#search-area {
+    @media screen and (max-width: 768px) {
+        background-color: $color-blue-100;
+        padding: $pd-1 $pd-1;
+        svg {
+            color: $color-white;
+            font-size: $font-size-1;
+        }
+        input {
+            width: 60%;
+            height: 3.5rem;
+            border: 2px solid $color-white;
+            border-radius: 5px;
+            padding-left: $pd-1;
+            font-size: $font-size-1;
+            color: $color-white;
+            &::placeholder {
+                font-size: $font-size-1;
+                color: $color-white;
+            }
+        }
+        &::before {
+            border-width: 0;
+        }
+    }
+}
+
+.intro {
+    @media screen and (max-width: 768px) {
+        .intro-container {
+            .intro-right {
+                background-image: url("../img/our-vehicles-intro-2.jpg");
+                margin-top: $mg-2;
+                .intro-right-content {
+                    width: 40%;
+                    left: 5%;
+                }
+            }
+        }
+    }
+}
+
+#our-vehicles {
+    @media screen and (max-width: 768px) {
+        h1 {
+            font-size: $font-size-5;
+        }
+        .carousel-caption-config {
+            width: 60%;
+            left: 20%;
+            text-align: center;
+            bottom: 15%;
+            top: unset;
+            font-size: $font-size-1 - .2;
+            img {
+                width: 100%;
+            }
+            .carousel-caption-detail {
+                .carousel-detail-content {
+                    h2 {
+                        font-size: $font-size-3;
+                    }
+                    p {
+                        font-size: $font-size-1 - .2;
+                    }
+                }
+            }
+        }
+        .carousel-inner {
+            margin-top: $mg-3;
+        }
+        .carousel-caption-footer {
+            width: 100%;
+            border: none;
+            bottom: 2%;
+            a {
+                font-size: $font-size-1 - .2;
+            }
+        }
+        .carousel-indicators-xs {
+            position: absolute;
+            top: 0;
+            left: 20%;
+            z-index: 9;
+        }
+
+    }
+}
+
+.carousel-control-next {
+    @media screen and (max-width: 768px) {
+        right: 0;
+    }
+}
+.carousel-control-prev {
+    @media screen and (max-width: 768px) {
+        left: 0;
+    }
+}
+
+#search-field {
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        flex-wrap: wrap;
+        div {
+            padding: $pd-1 $pd-3;
+            width: 100%;
+            border-right: none;
+            border-top: $border-3;
+            svg {
+                font-size: $font-size-1;
+            }
+            input {
+                font-size: $font-size-2;
+                width: 70%;
+                &::placeholder {
+                    font-size: $font-size-2;
+                }
+            }
+            .btn-search {
+                @include button($color-blue-100, transparent, $color-blue-100, $pd-1 $pd-5, $color-blue-100, $color-white); 
+            }
+        }
+        p {
+            padding: $pd-2;
+            text-align: center;  
+        }
+    } 
+}
+
+#footer {
+    @media screen and (max-width: 768px) {
+        background-color: $color-white;
+        padding: 0;
+        .footer-detail {
+            width: 100%;
+            h1 {
+                background-color: $color-grey;
+                padding: $pd-2 $pd-2;
+                font-size: $font-size-1;
+                display: flex;
+                align-items: center;
+                margin-bottom: $mg-1 - 3;
+                span {
+                    &:nth-child(2) {
+                        display: inline-block;
+                        background-color: transparent;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 26px;
+                        text-align: center;
+                        border: $border-1;
+                        svg {
+                            color: $color-blue-200;
+                            font-size: $font-size-1;
+                        }
+                    }
+                }
+                
+            }
+            ul {
+                padding-left: $pd-3;
+            }
+        }
+        .footer-touch {
+            .touch-left, .touch-right {
+                text-align: left;
+                padding: $pd-2 $pd-3;
+            }
+            .touch-right {
+                .btn-search {
+                    @include button($color-blue-100, transparent, $color-blue-200, $pd-1 $pd-5, $color-blue-100, $color-white);
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 714px) and (max-width: 768px) {
+        .footer-touch {
+            .touch-right {
+                text-align: right;
+            }
+        }
+    }
+}
+
+#copy-right {
+    @media screen and (max-width: 768px) {
+        .copy-right-left {
+            p {
+                font-size: $font-size-1 - 0.2;
+            }
+        }
+        .copy-right-right {
+            ul {
+                justify-content: flex-start;
+                li {
+                    padding: 0 $pd-1;
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    a {
+                        font-size: $font-size-1 - 0.2;
+                    }
+                }
+            }
+        }
+        .logo-footer {
+            img {
+                display: none;
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+}

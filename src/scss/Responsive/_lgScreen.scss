@@ -1,0 +1,60 @@
+#search-area {
+    @media screen and (min-width: 1200px) and (max-width: 1340px) {
+        input {
+            width: 80%;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        padding: $pd-2 $pd-3;
+        input {
+            width: 80%;
+        }
+    }
+}
+
+.carousel-indicators-config {
+    @media screen and (min-width: 992px) {
+        width: 75%;
+    }
+}
+
+#search-field {
+    @media screen and (max-width: 1370px) {
+        div {
+            width: 85%;
+            input {
+                width: 70%;
+            }
+        }
+    }
+}
+
+#copy-right {
+    @media screen and (max-width: 1200px) {
+        .copy-right-left {
+            p {
+                font-size: $font-size-1 - 0.1;
+            }
+        }
+        .copy-right-right {
+            ul {
+                justify-content: flex-end;
+                li {
+                    padding: 0 $pd-2;
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    a {
+                        font-size: $font-size-1 - 0.1;
+                    }
+                }
+            }
+        }
+        .logo-footer {
+            img {
+                height: 40px;
+                max-width: 50%;
+            }
+        }
+    }
+}
