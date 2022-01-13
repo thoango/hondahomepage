@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
 
-    // If we need pagination
+    // Pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -120,16 +120,6 @@ $(".indicators-xs-header").click(function () {
         $(".indicators-xs-header").addClass("active");
         $(".indicators-xs-header svg").css("transform", "rotate(180deg)");
     }
-
-    // $(".indicators-xs-header svg").css("transform", "rotate(180deg");
-
-    // if ($(".indicators-xs-header svg").hasClass("transform-rotate-0")) {
-    //     $(".indicators-xs-header svg").removeClass("transform-rotate-0");
-    //     $(".indicators-xs-header svg").addClass("transform-rotate-180");
-    // } else {
-    //     $(".indicators-xs-header svg").removeClass("transform-rotate-180");
-    //     $(".indicators-xs-header svg").addClass("transform-rotate-0");
-    // }
 })
 
 $(".carousel-indicators-xs ol li").click(function () {
@@ -182,36 +172,6 @@ $(".carousel-control-next").click(function () {
         }
     })
 })
-
-// var count = 0;
-// $(".carousel-control-prev").click(function() {
-//     $(".carousel-indicators-config li").removeClass("active");
-//     if (count == 0) {
-//         count = 4;
-//     } else {
-//         count--;
-//     }
-
-//     $(".carousel-indicators-config li").each(function(i) {
-//         if (count == i) {
-//             $(this).addClass("active");
-//         }
-//     })
-// })
-// $(".carousel-control-next").click(function () {
-//         $(".carousel-indicators-config li").removeClass("active");
-//         if (count == 4) {
-//             count = 0;
-//         } else {
-//             count++;
-//         }
-
-//         $(".carousel-indicators-config li").each(function (i) {
-//             if (count == i) {
-//                 $(this).addClass("active");
-//             }
-//         })
-//     })
 
 $(".back-to-top").click(function () {
     $("body, html").animate({ scrollTop: 0 }, 1000);
